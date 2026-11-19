@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>CSS Animation</title>
+        <style type="text/css">
+            @-webkit-keyframes move {
+                from {left: 0; top: 0;}
+                50% {left: 500px; top: 0;}
+                to {left: 500px; top: 500px;}
+            }
+            #anim1 {-webkit-animation:move 5s ease-out 0 infinite alternate;
+                    position:absolute;
+                    height: 100px; width: 100px;
+                    background-color: purple;}
+        </style>
+    </head>
+    <body>
+        <div id="anim1">Watch me move!</div>
+    </body>
+</html>

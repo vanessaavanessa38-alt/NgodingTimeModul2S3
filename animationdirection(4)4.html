@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Animations - animation-direction</title>
+        <style type="text/css">
+            @-webkit-keyframes resize {
+            from {width: 100px; height: 300px; 
+      left: 0; top: 0;} 
+50%  {width: 100px; height: 100px; 
+      left: 300px; top: 0;} 
+to   {width: 300px;height: 100px; 
+      left: 300px; top: 300px;} 
+} 
+#anim1 {-webkit-animation-name:resize; 
+        -webkit-animation-duration: 4s; 
+        -webkit-animation-iteration-count: 5; 
+        -webkit-animation-direction: alternate; 
+        position:absolute; 
+        background-color: purple;}
+        </style>
+    </head>
+    <body>
+        <div id="anim1">watch me move and change size!</div>
+    </body>
+</html>

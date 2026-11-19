@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Animations - animation-name</title>
+        <style type="text/css">
+            @-webkit-keyframes mmove {
+                from {top: 0; opacity: 1;}
+                50%  {top: 0; left: 500px; opacity: 5;}
+                to   {top: 500px; left: 500px; opacity: .1;}
+            }
+            @-webkit-keyframes resize {
+                from  {height: 300px; width: 100px;}
+                50%   {height: 100px; width: 100px;}
+                to    {height: 100px; width: 300px;}
+            }
+            @-webkit-keyframes fade {
+                from {opacity: 1;}
+                50%  {opacity: .5;}
+                to   {opacity: .1;}
+            }
+            #anim1 {-webkit-animation-name: move, resize, fade;
+                    -webkit-animation-duration: 10s;
+                    position: absolute;
+                    background-color: purple;}
+        </style>
+    </head>
+    <body>
+        <div id="anim1">watch me move and vanish!</div>
+    </body>
+</html>

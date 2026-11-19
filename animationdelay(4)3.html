@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS Animations - animation delay</title>
+        <style type="text/css">
+            @-webkit-keyframes move {
+            from {width: 100px; height: 300px;
+                left: 0; top: 0;}
+            50% {width: 100px; height: 300px;
+                left: 300px; top: 0px;}
+            to  {width: 100px; height: 300px;
+                left: 300px; top: 300px;}
+            }
+            @-webkit-keyframes resize {
+            from {width: 100px; height: 300px;
+                    left: 0; top: 0;}
+            50%  {width: 100px; height: 100px;
+                    left: 300px; top: 300px;}
+            to   {width: 300px; height: 100px;
+                    left: 300px; top: 300px;}
+            }
+            #anim1 {-webkit-animation:move, resize;
+                    -webkit-animation-duration: 4s, 4s;
+                    -webkit-animation-delay: 0s, 4s;
+                    position: absolute;
+                    background-color: purple;}
+        </style>
+    </head>
+    <body>
+        <div id="anim1">Watch me move and change size</div>
+    </body>
+</html>

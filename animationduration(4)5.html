@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>CSS animations - -webkit-animation-duration</title>
+        <style type="text/css">
+            @-webkit-keyframes move {
+                from    {left: 0;top: 0;}
+                50%     {left: 300px;top: 0;}
+                to      {left: 300px;top: 300px;}
+            }
+            @-webkit-keyframes resize {
+                from {width: 100px;height: 300px;}
+                50%  {width: 100px;height: 100px;}
+                to   {width: 300px;height: 100px;}
+            }
+            #anim1 {-webkit-animation-name: move, resize;
+                    -webkit-animation-duration: 4s, 10s;
+                    position:absolute;
+                    background: purple;}
+        </style>
+    </head>
+    <body>
+        <div id="anim1">watch me move and change size!</div>
+    </body>
+</html>
