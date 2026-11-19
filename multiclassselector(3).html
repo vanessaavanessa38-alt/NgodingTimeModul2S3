@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Multiple Class Selector Example</title>
+        <style type="text/css" media="all">
+            .heading        {font-family: impact, Sans-serif;}
+            .veryimportant  {background-color: yellow;}
+            .stuff          {color: red;}
+            .veryimportant  {font-style: italic;}
+            .veryimportant.example.stuff {text-decoration: underline;}
+        </style>
+    </head>
+    <body>
+        <h1 class="veryimportant heading stuff">Heading (yellow background, red text, italic, and impact)</h1>
+        <p class="veryimportant">This is the first paragraph. (yellow background, black text)</p>
+        <p class="stuff">This is the second paragraph. (red text, default background)</p>
+        <p class="veryimportant stuff">This is the third paragraph. (yellow background, red text, italic)</p>
+        <p class="stuff veryimportant example dummy">This is the Fourth paragraph. (yellow background, red text, italic, underlined)</p>
+    </body>
+</html>
